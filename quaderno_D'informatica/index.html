@@ -18,6 +18,33 @@
         <li><a href="esercizio2.html">Esercizio 2</a></li>
         <li><a href="esercizio3.html">Esercizio 3</a></li>
     </ul>
+    <section>
+        <!-- Titolo della sezione -->
+        <h1>Inserisci i tuoi dati</h1>
+        <!-- Inizio del form, invia i dati a 'salva_dati.php' utilizzando il metodo POST -->
+        <form action="salva_dati.php" method="POST">
+            <!-- Etichetta per il campo nome -->
+            <label for="name">Nome:</label>
+            <!-- Campo di input per il nome, obbligatorio per l'invio del form -->
+            <input type="text" id="name" name="name" required><br><br>
+            <!-- Etichetta per il campo email -->
+            <label for="email">Email:</label>
+            <!-- Campo di input per l'email, obbligatorio per l'invio del form -->
+            <input type="email" id="email" name="email" required><br><br>
+            <!-- Pulsante per inviare il form -->
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+    
+
+    <!--apertura del footer-->
+    <footer>
+        <h5>Contatti</h5>
+                <p>Alessio Roselli</p> <!--questo permette di fare un Paragrafo-->
+                <p>Email: <a href="mailto:infoquaderno@gmail.com">infoquaderno@gmail.com</a></p> <!--questo è un altro paragrafo dove contine la email-->
+                <p>Telefono: <a href="tel:+39 123456789">+39 123-456-789</a></p>  <!--questo è un altro paragfrafo dove contine numero di telefono-->
+    </footer>
+    <!--chiusura del footer-->
 <!-- Chiusura del body -->
 </body>
 <!-- Chiusura del documento HTML -->
