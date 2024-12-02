@@ -1,0 +1,117 @@
+
+<!-- Dichiara che questo è un documento HTML5 -->
+<!DOCTYPE html>
+<!-- Inizio della sezione head che contiene i metadati -->
+<head>
+    <!-- Titolo della pagina che apparirà nella scheda del browser -->
+    <title>Normalizzazione: Forme Normali</title>
+</head>
+<body>
+<section>
+    <h1>Normalizzazione: Forme Normali</h1>
+
+    <!-- Spiegazione delle forme normali -->
+    <article>
+        <h2>Che cos'è la normalizzazione?</h2>
+        <p>
+            La normalizzazione è un processo di organizzazione dei dati in un database per ridurre la ridondanza e migliorare l'integrità dei dati.
+            Consiste in una serie di regole o forme normali (1NF, 2NF, 3NF, ecc.) che aiutano a progettare tabelle efficienti.
+        </p>
+    </article>
+
+    <!-- Esempio di trasformazione di una tabella -->
+    <article>
+        <h2>Da una tabella non normalizzata a una tabella in 3NF</h2>
+        
+        <!-- Descrizione della tabella originale -->
+        <h3>Tabella originale</h3>
+        <table border="1">
+            <tr>
+                <th>Ordine ID</th>
+                <th>Cliente</th>
+                <th>Prodotto</th>
+                <th>Quantità</th>
+                <th>Prezzo</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mario Rossi</td>
+                <td>Mela</td>
+                <td>5</td>
+                <td>2€</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mario Rossi</td>
+                <td>Pera</td>
+                <td>3</td>
+                <td>3€</td>
+            </tr>
+        </table>
+
+        <!-- Spiegazione delle modifiche -->
+        <p>
+            La tabella sopra presenta ridondanze, come la ripetizione del nome del cliente per lo stesso ordine. 
+            Seguendo le regole delle forme normali, possiamo trasformare questa tabella in più tabelle separate.
+        </p>
+
+        <!-- Tabella normalizzata -->
+        <h3>Tabella Cliente</h3>
+        <table border="1">
+            <tr>
+                <th>Cliente ID</th>
+                <th>Nome</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mario Rossi</td>
+            </tr>
+        </table>
+
+        <h3>Tabella Ordini</h3>
+        <table border="1">
+            <tr>
+                <th>Ordine ID</th>
+                <th>Cliente ID</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+        <h3>Tabella Prodotti</h3>
+        <table border="1">
+            <tr>
+                <th>Ordine ID</th>
+                <th>Prodotto</th>
+                <th>Quantità</th>
+                <th>Prezzo</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mela</td>
+                <td>5</td>
+                <td>2€</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pera</td>
+                <td>3</td>
+                <td>3€</td>
+            </tr>
+        </table>
+    </article>
+
+    <!--apertura del footer-->
+    <footer>
+        <h5>Contatti</h5>
+                <p>Alessio Roselli</p> <!--questo permette di fare un Paragrafo-->
+                <p>Email: <a href="mailto:infoquaderno@gmail.com">infoquaderno@gmail.com</a></p> <!--questo è un altro paragrafo dove contine la email-->
+                <p>Telefono: <a href="tel:+39 123456789">+39 123-456-789</a></p>  <!--questo è un altro paragfrafo dove contine numero di telefono-->
+    </footer>
+    <!--chiusura del footer-->
+<!-- Chiusura del body -->
+</body>
+<!-- Chiusura del documento HTML -->
+</html>
