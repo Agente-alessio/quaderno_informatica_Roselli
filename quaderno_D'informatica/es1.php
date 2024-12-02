@@ -1,11 +1,6 @@
 <html> <!-- Apertura del tag HTML -->
 <?php  // Apertura del tag PHP
 echo'<table border="1">'; // Crea una tabella HTML con bordo di spessore 1
-
-// Riga vuota
-
-// Riga vuota
-
 for($i=1; $i<11; $i++){ // Ciclo esterno che itera da 1 a 10
     echo "<tr>"; // Apre una nuova riga della tabella
         for ($j = 1; $j <= 10; $j++) { // Ciclo interno che itera da 1 a 10

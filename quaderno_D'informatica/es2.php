@@ -26,7 +26,7 @@ if ($ora >= 8 && $ora < 13) {
     echo "\nBuonanotte $nome, sono le ore $ora";
 }
 
-// Spazio vuoto           
+         
 ?>
 <!-- Link per tornare al sommario -->
 <a href="index.html">
